@@ -1,0 +1,37 @@
+
+tr,td,th{
+    border: 1px solid black;
+}
+
+
+but__wrap{
+    display: inline-block;
+}
+p{
+    display: inline-block;
+}
+
+.save__author{
+    width: auto;
+    height:40px;
+    display: inline-block;
+}
+
+.save__author{
+    width: auto;
+    height:40px;
+    display: inline-block;
+}
+.target{
+    display: inline-grid;
+}
+
+.buttons{
+    display: block;
+}
+
+.but{
+    display: block;
+}
+
+

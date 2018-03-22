@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="test1@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.4">
+    <root id="1"/>
+    <schema id="2" parent="1" name="test1">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="bank"/>
+    <schema id="4" parent="1" name="bootjs"/>
+    <schema id="5" parent="1" name="information_schema"/>
+    <schema id="6" parent="1" name="mock_data"/>
+    <schema id="7" parent="1" name="mysql"/>
+    <schema id="8" parent="1" name="people_city_profession"/>
+    <schema id="9" parent="1" name="performance_schema"/>
+    <schema id="10" parent="1" name="shop"/>
+    <schema id="11" parent="1" name="sys"/>
+    <schema id="12" parent="1" name="test"/>
+    <schema id="13" parent="1" name="training"/>
+    <schema id="14" parent="1" name="username"/>
+    <schema id="15" parent="1" name="worlf"/>
+    <table id="16" parent="2" name="authors"/>
+    <table id="17" parent="2" name="book_author"/>
+    <table id="18" parent="2" name="books"/>
+    <column id="19" parent="16" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="20" parent="16" name="born">
+      <Position>2</Position>
+      <DataType>date|0</DataType>
+    </column>
+    <column id="21" parent="16" name="gender">
+      <Position>3</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="22" parent="16" name="name">
+      <Position>4</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <key id="23" parent="16" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="24" parent="17" name="author_id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="25" parent="17" name="book_id">
+      <Position>2</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="26" parent="17" name="FKoyfjitngiusmwc54f1rgnu7r4">
+      <ColNames>author_id</ColNames>
+    </index>
+    <key id="27" parent="17" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>book_id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="28" parent="17" name="FKoyfjitngiusmwc54f1rgnu7r4">
+      <ColNames>author_id</ColNames>
+      <RefSchemaName>test1</RefSchemaName>
+      <RefTableName>authors</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <foreign-key id="29" parent="17" name="FK46gsiks9s4hr9f9ptyqxbuei">
+      <ColNames>book_id</ColNames>
+      <RefSchemaName>test1</RefSchemaName>
+      <RefTableName>books</RefTableName>
+      <RefColNames>id</RefColNames>
+    </foreign-key>
+    <column id="30" parent="18" name="id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="31" parent="18" name="genre">
+      <Position>2</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="32" parent="18" name="name">
+      <Position>3</Position>
+      <DataType>varchar(255)|0</DataType>
+    </column>
+    <column id="33" parent="18" name="published">
+      <Position>4</Position>
+      <DataType>datetime|0</DataType>
+    </column>
+    <column id="34" parent="18" name="rating">
+      <Position>5</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="35" parent="18" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>id</ColNames>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>
